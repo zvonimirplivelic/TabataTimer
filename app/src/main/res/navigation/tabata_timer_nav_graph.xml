@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabata_timer_nav_graph"
+    app:startDestination="@id/setUpTimerFragment">
+
+    <fragment
+        android:id="@+id/setUpTimerFragment"
+        android:name="com.zvonimirplivelic.tabatatimer.SetUpTimerFragment"
+        android:label="fragment_set_up_timer"
+        tools:layout="@layout/fragment_set_up_timer" >
+        <action
+            android:id="@+id/action_setUpTimerFragment_to_timerFragment"
+            app:destination="@id/timerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.zvonimirplivelic.tabatatimer.TimerFragment"
+        android:label="fragment_timer"
+        tools:layout="@layout/fragment_timer" />
+</navigation>

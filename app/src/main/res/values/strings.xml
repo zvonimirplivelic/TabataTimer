@@ -2,4 +2,6 @@
     <string name="app_name">TabataTimer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="iv_set_count_description">Set Count Row Icon</string>
+    <string name="tv_set_count_text">Number of sets:</string>
 </resources>
