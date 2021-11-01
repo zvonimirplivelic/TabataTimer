@@ -12,7 +12,8 @@
         <entry key="app/src/main/res/drawable/ic_subtract.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_workout.xml" value="0.209375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12681159420289856" />
-        <entry key="app/src/main/res/layout/fragment_set_up_timer.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_set_up_timer.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_timer.xml" value="0.19322916666666667" />
       </map>
     </option>
   </component>
