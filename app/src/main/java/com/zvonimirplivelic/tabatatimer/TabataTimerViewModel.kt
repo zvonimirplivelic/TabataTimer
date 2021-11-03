@@ -1,4 +1,7 @@
 package com.zvonimirplivelic.tabatatimer
 
-class TabataTimerViewModel {
+import androidx.lifecycle.ViewModel
+
+class TabataTimerViewModel: ViewModel() {
+    private val workoutTimer: WorkoutTimer()
 }

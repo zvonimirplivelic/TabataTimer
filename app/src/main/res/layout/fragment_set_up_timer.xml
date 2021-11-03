@@ -27,6 +27,7 @@
     <ImageView
         android:id="@+id/iv_subtract_set"
         style="@style/ImageViewStyle"
+        android:contentDescription="@string/iv_subtract_set_description"
         android:src="@drawable/ic_subtract"
         app:layout_constraintLeft_toRightOf="@id/iv_set_count"
         app:layout_constraintRight_toLeftOf="@id/et_set_count"
@@ -36,8 +37,9 @@
     <EditText
         android:id="@+id/et_set_count"
         style="@style/TimerInputStyle"
-        android:hint="1"
-        android:text="1"
+        android:hint="@string/et_set_count_hint"
+        android:importantForAutofill="no"
+        android:text="@string/et_set_count_default_text"
         app:layout_constraintBottom_toBottomOf="@+id/iv_subtract_set"
         app:layout_constraintLeft_toRightOf="@id/iv_subtract_set"
         app:layout_constraintRight_toLeftOf="@id/iv_add_set"
@@ -46,6 +48,7 @@
     <ImageView
         android:id="@+id/iv_add_set"
         style="@style/ImageViewStyle"
+        android:contentDescription="@string/iv_add_set_description"
         android:src="@drawable/ic_add"
         app:layout_constraintEnd_toEndOf="@+id/tv_set_count"
         app:layout_constraintLeft_toRightOf="@id/et_set_count"
@@ -80,6 +83,7 @@
     <ImageView
         android:id="@+id/iv_subtract_work_time"
         style="@style/ImageViewStyle"
+        android:contentDescription="@string/iv_subtract_work_time_description"
         android:src="@drawable/ic_subtract"
         app:layout_constraintLeft_toRightOf="@id/iv_work_time"
         app:layout_constraintRight_toLeftOf="@id/et_work_time"
@@ -89,8 +93,9 @@
     <EditText
         android:id="@+id/et_work_time"
         style="@style/TimerInputStyle"
-        android:hint="8"
-        android:text="8"
+        android:hint="@string/et_work_time_hint"
+        android:importantForAutofill="no"
+        android:text="@string/et_work_time_default_text"
         app:layout_constraintBottom_toBottomOf="@+id/iv_subtract_work_time"
         app:layout_constraintLeft_toRightOf="@id/iv_subtract_work_time"
         app:layout_constraintRight_toLeftOf="@id/iv_add_work_time"
@@ -99,6 +104,7 @@
     <ImageView
         android:id="@+id/iv_add_work_time"
         style="@style/ImageViewStyle"
+        android:contentDescription="@string/iv_add_work_time_description"
         android:src="@drawable/ic_add"
         app:layout_constraintEnd_toEndOf="@+id/tv_work_time"
         app:layout_constraintLeft_toRightOf="@id/et_work_time"
@@ -137,17 +143,19 @@
         app:layout_constraintLeft_toRightOf="@id/iv_exercise_count"
         app:layout_constraintRight_toLeftOf="@id/et_exercise_count"
         app:layout_constraintStart_toStartOf="@+id/tv_exercise_count"
-        app:layout_constraintTop_toBottomOf="@id/tv_exercise_count" />
+        app:layout_constraintTop_toBottomOf="@id/tv_exercise_count"
+        android:contentDescription="@string/iv_subtract_exercise_description" />
 
     <EditText
         android:id="@+id/et_exercise_count"
         style="@style/TimerInputStyle"
-        android:hint="8"
-        android:text="8"
+        android:hint="@string/et_exercise_count_hint"
+        android:text="@string/et_exercise_count_default_text"
         app:layout_constraintBottom_toBottomOf="@+id/iv_subtract_exercise"
         app:layout_constraintLeft_toRightOf="@id/iv_subtract_exercise"
         app:layout_constraintRight_toLeftOf="@id/iv_add_exercise"
-        app:layout_constraintTop_toTopOf="@+id/iv_subtract_exercise" />
+        app:layout_constraintTop_toTopOf="@+id/iv_subtract_exercise"
+        android:importantForAutofill="no" />
 
     <ImageView
         android:id="@+id/iv_add_exercise"
@@ -156,7 +164,8 @@
         app:layout_constraintEnd_toEndOf="@+id/tv_exercise_count"
         app:layout_constraintLeft_toRightOf="@id/et_exercise_count"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_exercise_count" />
+        app:layout_constraintTop_toBottomOf="@id/tv_exercise_count"
+        android:contentDescription="@string/iv_add_exercise_description" />
 
     <View
         android:id="@+id/work_rest_divider"
@@ -190,17 +199,19 @@
         app:layout_constraintLeft_toRightOf="@id/iv_rest_time"
         app:layout_constraintRight_toLeftOf="@id/et_rest_time"
         app:layout_constraintStart_toStartOf="@+id/tv_rest_time"
-        app:layout_constraintTop_toBottomOf="@id/tv_rest_time" />
+        app:layout_constraintTop_toBottomOf="@id/tv_rest_time"
+        android:contentDescription="@string/iv_subtract_rest_time" />
 
     <EditText
         android:id="@+id/et_rest_time"
         style="@style/TimerInputStyle"
-        android:hint="8"
-        android:text="8"
+        android:hint="@string/et_rest_time_hint"
+        android:text="@string/et_rest_time_default_text"
         app:layout_constraintBottom_toBottomOf="@+id/iv_subtract_rest_time"
         app:layout_constraintLeft_toRightOf="@id/iv_subtract_rest_time"
         app:layout_constraintRight_toLeftOf="@id/iv_add_rest_time"
-        app:layout_constraintTop_toTopOf="@+id/iv_subtract_rest_time" />
+        app:layout_constraintTop_toTopOf="@+id/iv_subtract_rest_time"
+        android:importantForAutofill="no" />
 
     <ImageView
         android:id="@+id/iv_add_rest_time"
@@ -209,14 +220,65 @@
         app:layout_constraintEnd_toEndOf="@+id/tv_rest_time"
         app:layout_constraintLeft_toRightOf="@id/et_rest_time"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_rest_time" />
+        app:layout_constraintTop_toBottomOf="@id/tv_rest_time"
+        android:contentDescription="@string/iv_add_rest_time_description" />
 
     <View
-        android:id="@+id/rest_bottom_divider"
+        android:id="@+id/rest_prep_divider"
         style="@style/RowDividerStyle"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_rest_time" />
+
+    <ImageView
+        android:id="@+id/iv_prep_time"
+        style="@style/ImageViewStyle"
+        android:contentDescription="@string/iv_prep_time_description"
+        android:src="@drawable/ic_prep_time"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_subtract_prep_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_prep_time"
+        app:layout_constraintTop_toBottomOf="@id/rest_prep_divider" />
+
+    <TextView
+        android:id="@+id/tv_prep_time"
+        style="@style/RowTitleStyle"
+        android:text="@string/tv_prep_time_text"
+        app:layout_constraintLeft_toRightOf="@id/iv_prep_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rest_prep_divider" />
+
+    <ImageView
+        android:id="@+id/iv_subtract_prep_time"
+        style="@style/ImageViewStyle"
+        android:src="@drawable/ic_subtract"
+        app:layout_constraintLeft_toRightOf="@id/iv_prep_time"
+        app:layout_constraintRight_toLeftOf="@id/et_prep_time"
+        app:layout_constraintStart_toStartOf="@+id/tv_prep_time"
+        app:layout_constraintTop_toBottomOf="@id/tv_prep_time"
+        android:contentDescription="@string/iv_subtract_preparation_time_description" />
+
+    <EditText
+        android:id="@+id/et_prep_time"
+        style="@style/TimerInputStyle"
+        android:hint="@string/et_preparation_time_hint"
+        android:text="@string/et_prep_time_default_text"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_subtract_prep_time"
+        app:layout_constraintLeft_toRightOf="@id/iv_subtract_prep_time"
+        app:layout_constraintRight_toLeftOf="@id/iv_add_prep_time"
+        app:layout_constraintTop_toTopOf="@+id/iv_subtract_prep_time"
+        android:importantForAutofill="no" />
+
+    <ImageView
+        android:id="@+id/iv_add_prep_time"
+        style="@style/ImageViewStyle"
+        android:src="@drawable/ic_add"
+        app:layout_constraintEnd_toEndOf="@+id/tv_prep_time"
+        app:layout_constraintLeft_toRightOf="@id/et_prep_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_prep_time"
+        android:contentDescription="@string/iv_add_preparation_time_description" />
+
 
     <Button
         android:id="@+id/btn_start_timer"

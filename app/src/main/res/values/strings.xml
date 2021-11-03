@@ -3,15 +3,38 @@
 
     <string name="iv_set_count_description">Set Count Row Icon</string>
     <string name="tv_set_count_text">Set count</string>
+    <string name="et_set_count_hint">Number of sets:</string>
+    <string name="et_set_count_default_text">1</string>
+    <string name="iv_subtract_set_description">Subtract number of sets</string>
+    <string name="iv_add_set_description">Add number of sets</string>
 
     <string name="iv_exercise_count_description">Exercise Count Row Icon</string>
     <string name="tv_exercise_count_text">Exercise count</string>
+    <string name="iv_subtract_exercise_description">Subtract number of exercise\'s</string>
+    <string name="et_exercise_count_default_text">8</string>
+    <string name="et_exercise_count_hint">Number of exercise\'s</string>
+    <string name="iv_add_exercise_description">Add an exercise</string>
 
     <string name="iv_work_time_description">Work Time Row Icon</string>
     <string name="tv_work_time_text">Work time</string>
+    <string name="iv_subtract_work_time_description">Subtract work time</string>
+    <string name="et_work_time_default_text">20</string>
+    <string name="et_work_time_hint">Work time:</string>
+    <string name="iv_add_work_time_description">Add work time</string>
 
-    <string name="iv_rest_time_description">Rest Time Row Icon</string>
+    <string name="iv_rest_time_description">Rest Time Rowtheme Icon</string>
     <string name="tv_rest_time_text">Rest time</string>
+    <string name="iv_subtract_rest_time">Subtract rest time</string>
+    <string name="et_rest_time_default_text">10</string>
+    <string name="et_rest_time_hint">Rest time:</string>
+    <string name="iv_add_rest_time_description">Add rest time</string>
+
+    <string name="iv_prep_time_description">Preparation Time Row Icon</string>
+    <string name="tv_prep_time_text">Preparation time</string>
+    <string name="iv_subtract_preparation_time_description">Subtract preparation time</string>
+    <string name="et_preparation_time_hint">Preparation time:</string>
+    <string name="et_prep_time_default_text">10</string>
+    <string name="iv_add_preparation_time_description">Add preparation time</string>
 
     <string name="btn_start_timer_text">Start Workout</string>
 </resources>
